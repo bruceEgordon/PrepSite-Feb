@@ -21,5 +21,9 @@ namespace PrepSite.Models.Pages
             Order = 1)]
         public virtual XhtmlString MainBody { get; set; }
 
+        [CultureSpecific]
+        [Display(Name = "Heading", Description = "If the Heading is not set, the page falls back to showing the Name.", GroupName = SystemTabNames.Content, Order = 10)]
+        public virtual string Heading { get; set; }
+
     }
 }
