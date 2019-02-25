@@ -25,5 +25,8 @@ namespace PrepSite.Models.Pages
         [Display(Name = "Heading", Description = "If the Heading is not set, the page falls back to showing the Name.", GroupName = SystemTabNames.Content, Order = 10)]
         public virtual string Heading { get; set; }
 
+        [Display(GroupName = SiteTabNames.Contact, Order = 10)]
+        public virtual string Phone { get; set; }
+
     }
 }
