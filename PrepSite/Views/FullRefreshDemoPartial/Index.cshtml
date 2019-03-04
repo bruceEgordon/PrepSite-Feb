@@ -1,0 +1,11 @@
+﻿@using PrepSite.Models.ViewModels
+@using PrepSite.Models.Pages
+@model PageViewModel<FullRefreshDemo>
+
+<div class="block span4">
+    <div class="border">
+        <a href="@Url.ContentUrl(Model.CurrentPage.ContentLink)">
+            @Html.PropertyFor(m => m.CurrentPage.MainBody)
+        </a>
+    </div>
+</div>

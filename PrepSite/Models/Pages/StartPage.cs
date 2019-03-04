@@ -10,6 +10,8 @@ namespace PrepSite.Models.Pages
     [ContentType(DisplayName = "StartPage", 
         GUID = "78bd1f67-8b95-46df-bc98-9fe0b918e00f", Description = "For creating a Start Page",
         GroupName = "Specialized")]
+    [AvailableContentTypes(Include = new[] { typeof(StandardPage),
+        typeof(TypedPageWithAttributeSample), typeof(FullRefreshDemo), typeof(SearchPage) })]
     public class StartPage : PageData
     {
 
@@ -27,6 +29,10 @@ namespace PrepSite.Models.Pages
 
         [Display(GroupName = SiteTabNames.Contact, Order = 10)]
         public virtual string Phone { get; set; }
+
+        [Display(Name = "Main Conent Area", Order = 40)]
+        public virtual ContentArea MainContentArea { get; set; }
+
 
     }
 }

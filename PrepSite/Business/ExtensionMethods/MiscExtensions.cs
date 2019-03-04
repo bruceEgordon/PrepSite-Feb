@@ -4,7 +4,7 @@ using EPiServer.ServiceLocation;
 using System;
 using System.Text;
 
-namespace AlloyTraining.Business.ExtensionMethods
+namespace PrepSite.Business.ExtensionMethods
 {
     public static class MiscExtensions
     {

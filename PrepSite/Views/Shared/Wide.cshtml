@@ -1,0 +1,19 @@
+﻿@using PrepSite.Models.ViewModels
+@using PrepSite.Models.Pages
+@model PageViewModel<StandardPage>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8" style="background-color: lavenderblush">
+            <div class="border">
+                <h4>Standard Page Wide View</h4>
+                <a href="@Url.ContentUrl(Model.CurrentPage.ContentLink)">
+                    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -9,8 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@Model.CurrentPage.Name</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/bootstrap.css")" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-3.0.0.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap.js")"></script>
+
 </head>
 <body>
     <div class="navbar navbar-expand-md navbar-inverse navbar-fixed-top">
